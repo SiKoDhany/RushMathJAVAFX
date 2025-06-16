@@ -8,9 +8,13 @@ public class Main extends Application {
     @Override
     public void start(Stage stage) {
         QuizGame quizGame = new QuizGame();
-        Scene scene = new Scene(quizGame.getRoot(), 400, 300);
+        Scene scene = new Scene(quizGame.getRoot(), 600, 650);
+        
+        // No es necesario cargar el CSS externo ya que los estilos ahora están incorporados directamente
+        
         stage.setScene(scene);
-        stage.setTitle("Math Rush");
+        stage.setTitle("Math Rush - Desafío Matemático");
+        stage.setResizable(false);
         stage.show();
     }
 
